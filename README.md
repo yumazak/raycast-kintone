@@ -27,7 +27,7 @@ Kintone サーバーから最新のアプリ一覧を取得し、ローカルに
 ```bash
 git clone https://github.com/yumazak/raycast-kintone.git
 cd raycast-kintone
-pnpm install && pnpm dev
+npm install && npm run dev
 ```
 
 ### 2. 拡張機能の設定
@@ -56,7 +56,7 @@ Raycast の設定画面で以下を入力してください:
 ## 開発
 
 ```bash
-pnpm install && pnpm dev
+npm install && npm run dev
 ```
 
 ## ライセンス

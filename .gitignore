@@ -22,7 +22,7 @@ Thumbs.db
 *.log
 npm-debug.log*
 
-# Lock files (pnpm generates pnpm-lock.yaml, but package-lock.json is required by ray lint)
+# Lock files
 
 raycast-env.d.ts
 

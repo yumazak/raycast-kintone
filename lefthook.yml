@@ -3,7 +3,7 @@ pre-commit:
   commands:
     knip:
       glob: "*.{ts,tsx,js,jsx,json}"
-      run: pnpm knip
+      run: npm run knip
     cspell:
       glob: "**/*"
-      run: pnpm cspell
+      run: npm run cspell
