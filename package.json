@@ -1,0 +1,92 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "kintone",
+  "description": "Search and open kintone apps quickly from Raycast",
+  "license": "MIT",
+  "author": "yumazak",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yumazak/raycast-kintone.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yumazak/raycast-kintone/issues"
+  },
+  "homepage": "https://github.com/yumazak/raycast-kintone#readme",
+  "keywords": [
+    "raycast",
+    "kintone",
+    "extension",
+    "search"
+  ],
+  "scripts": {
+    "build": "ray build",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "prepublishOnly": "echo \"\\n\\nIt seems like you are trying to publish the Raycast extension to npm.\\n\\nIf you did intend to publish it to npm, remove the \\`prepublishOnly\\` script and rerun \\`npm publish\\` again.\\nIf you wanted to publish it to the Raycast Store instead, use \\`npm run publish\\` instead.\\n\\n\" && exit 1",
+    "publish": "npx @raycast/api@latest publish",
+    "knip": "knip",
+    "cspell": "cspell .",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@raycast/api": "^1.100.3",
+    "@raycast/utils": "2.2.2"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^2.1.1",
+    "@types/node": "25.2.1",
+    "@types/react": "19.2.13",
+    "cspell": "^9.6.4",
+    "eslint": "9.39.2",
+    "knip": "^5.83.1",
+    "lefthook": "^2.1.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2",
+    "vitest": "^4.0.18"
+  },
+  "icon": "extension-icon.png",
+  "commands": [
+    {
+      "name": "search-apps",
+      "title": "Search Apps",
+      "subtitle": "アプリを検索します",
+      "description": "Search and open kintone apps from cached data",
+      "mode": "view"
+    },
+    {
+      "name": "fetch-apps",
+      "title": "Fetch Apps",
+      "subtitle": "最新のアプリ一覧の情報を保存します",
+      "description": "Fetch and cache latest kintone apps from server",
+      "mode": "no-view"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "subdomain",
+      "type": "textfield",
+      "required": true,
+      "title": "Subdomain",
+      "description": "kintone subdomain (without .cybozu.com)",
+      "placeholder": "your-subdomain"
+    },
+    {
+      "name": "username",
+      "type": "textfield",
+      "required": true,
+      "title": "Username",
+      "description": "kintone username",
+      "placeholder": "username"
+    },
+    {
+      "name": "password",
+      "type": "password",
+      "required": true,
+      "title": "Password",
+      "description": "kintone password"
+    }
+  ],
+  "title": "Kintone",
+  "categories": ["Productivity"]
+}

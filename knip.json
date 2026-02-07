@@ -1,0 +1,10 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "tags": [
+    "-lintignore"
+  ],
+  "entry": [
+    "src/search-apps.tsx",
+    "src/fetch-apps.ts"
+  ]
+}

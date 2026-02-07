@@ -1,0 +1,8 @@
+pre-commit:
+  parallel: true
+  commands:
+    knip:
+      glob: "*.{ts,tsx,js,jsx,json}"
+      run: pnpm knip
+    cspell:
+      glob: "**/*"
